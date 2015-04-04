@@ -17,7 +17,6 @@
 		168167761AD019F9008A2F07 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 168167751AD019F9008A2F07 /* RARecipes.m */; };
 		168167791AD01AA3008A2F07 /* RARecipesTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 168167781AD01AA3008A2F07 /* RARecipesTableViewDataSource.m */; };
 		1681677D1AD01F36008A2F07 /* RARecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1681677B1AD01F36008A2F07 /* RARecipeViewController.m */; };
-		1681677E1AD01F36008A2F07 /* RARecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1681677C1AD01F36008A2F07 /* RARecipeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		168167781AD01AA3008A2F07 /* RARecipesTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipesTableViewDataSource.m; sourceTree = "<group>"; };
 		1681677A1AD01F36008A2F07 /* RARecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARecipeViewController.h; sourceTree = "<group>"; };
 		1681677B1AD01F36008A2F07 /* RARecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipeViewController.m; sourceTree = "<group>"; };
-		1681677C1AD01F36008A2F07 /* RARecipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RARecipeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +104,6 @@
 				168167781AD01AA3008A2F07 /* RARecipesTableViewDataSource.m */,
 				1681677A1AD01F36008A2F07 /* RARecipeViewController.h */,
 				1681677B1AD01F36008A2F07 /* RARecipeViewController.m */,
-				1681677C1AD01F36008A2F07 /* RARecipeViewController.xib */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -218,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				168167571ACF3BB0008A2F07 /* Main.storyboard in Resources */,
-				1681677E1AD01F36008A2F07 /* RARecipeViewController.xib in Resources */,
 				1681675C1ACF3BB0008A2F07 /* LaunchScreen.xib in Resources */,
 				168167591ACF3BB0008A2F07 /* Images.xcassets in Resources */,
 			);
