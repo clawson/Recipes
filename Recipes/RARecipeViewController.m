@@ -8,11 +8,12 @@
 
 #import "RARecipeViewController.h"
 #import "RARecipesTableViewDataSource.h"
+#import "RARecipeDetailViewController.h"
 
 #define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 #define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
-@interface RARecipeViewController ()
+@interface RARecipeViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) RARecipesTableViewDataSource *dataSource;
@@ -21,7 +22,7 @@
 
 @implementation RARecipeViewController
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
     
     [super viewDidLoad];
     
@@ -40,12 +41,22 @@
     [self.dataSource registerTableView:self.tableView];
     
     self.tableView.dataSource = self.dataSource;
+    self.tableView.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void) didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    RARecipeDetailViewController *detailViewController = [RARecipeDetailViewController new];
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+}
 
 @end
