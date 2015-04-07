@@ -54,6 +54,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     RARecipeDetailViewController *detailViewController = [RARecipeDetailViewController new];
+    detailViewController.index = indexPath.row;
     
     [self.navigationController pushViewController:detailViewController animated:YES];
     
