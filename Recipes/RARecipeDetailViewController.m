@@ -66,18 +66,18 @@
     // add the title
     [self.view addSubview:title];
 
-    // define the directions label (outside of the directions scroll view)
-    UILabel *directionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.margin, 95, self.widthWithMargins, self.textHeight)];  // next vertical location: 95 + 31 = 126
-    directionsLabel.text = @"Directions";
-    directionsLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
-    [self.view addSubview:directionsLabel];
+    // define the description label (outside of the description scroll view)
+    UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.margin, 95, self.widthWithMargins, self.textHeight)];  // next vertical location: 95 + 31 = 126
+    descriptionLabel.text = @"Description";
+    descriptionLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+    [self.view addSubview:descriptionLabel];
 
-    // define the directions
-    UILabel *directions = [[UILabel alloc] initWithFrame:CGRectMake(self.margin, 126, self.widthWithMargins, 93)];
-    directions.text = [RARecipes descriptionAtIndex:self.index];
-    directions.numberOfLines = 0;
-    [directions sizeToFit];
-    [self.view addSubview:directions];
+    // define the description
+    UILabel *description = [[UILabel alloc] initWithFrame:CGRectMake(self.margin, 126, self.widthWithMargins, 93)];
+    description.text = [RARecipes descriptionAtIndex:self.index];
+    description.numberOfLines = 0;
+    [description sizeToFit];
+    [self.view addSubview:description];
 
     // define the ingredients label (outside of the ingredients scroll view)
     UILabel *ingredientsLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.margin, 219, self.widthWithMargins, self.textHeight)];  // next vertical location: 219 + 31 = 250
